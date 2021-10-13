@@ -3,15 +3,16 @@
 
 # import the functions to be tested
 # from converters import psi2kpa, kpa2psi, mpg2lp100k, lp100k2mpg
+from converters import psi2kpa
 
-def describe_a_library_of_units_converters():
+def describe_a_library_of_units_converters_that():
     """Test suite for units conversion functions"""
     def blows_smoke():
         assert True
 
-    # def can_convert_psi_to_kpa():
-    #     assert psi2kpa(32) == 220.631712 # 32 PSI == 220.631712 KPa; average car tire pressure
-    #     assert psi2kpa(8.5) == 58.6052985 # 8.5 PSI == 58.6052985 KPa; basketball pressure
+    def can_convert_psi_to_kpa():
+        assert psi2kpa(32) == 220.631712 # 32 PSI == 220.631712 KPa; average car tire pressure
+        assert psi2kpa(8.5) == 58.6052985 # 8.5 PSI == 58.6052985 KPa; basketball pressure
 
     # def can_convert_kpa_to_psi():
     #     assert kpa2psi(101.325) == 14.695952495133 # KPa => PSI; average air pressure at sea level
